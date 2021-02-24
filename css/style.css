@@ -393,8 +393,6 @@ body {
 
 button.green {
   background-color: #55c57a;
-  -webkit-box-shadow: 0 0 8px 0 rgba(0, 0, 0, 0.44);
-          box-shadow: 0 0 8px 0 rgba(0, 0, 0, 0.44);
   border-radius: 8px;
 }
 
@@ -710,6 +708,16 @@ main h2 {
   font-weight: 600;
 }
 
+main p {
+  padding-top: 3.2rem;
+  font-size: 1.8rem;
+  line-height: 1.4;
+  width: 100%;
+  max-width: 94rem;
+  margin: 0 auto;
+  font-weight: 200;
+}
+
 main .main_intro {
   background-color: #fbf8f3;
   height: 28.4rem;
@@ -720,16 +728,170 @@ main .main_intro h2 {
   padding-top: 8rem;
 }
 
-main .main_intro p {
-  padding-top: 3.2rem;
-  font-size: 1.8rem;
-  line-height: 1.44;
-  width: 100%;
-  max-width: 94rem;
-  margin: 0 auto;
+main .main_content,
+main .main_action {
+  margin-top: 8rem;
 }
 
-main .main_content .main_content__wrapper {
+main .main_content .main_content_wrapper,
+main .main_action .main_content_wrapper {
   margin: 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-top: 6.2rem;
+  width: 100%;
+  max-width: 1180px;
+}
+
+main .main_content .main_content-section,
+main .main_action .main_content-section {
+  width: 352px;
+  height: 188px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  text-align: left;
+}
+
+main .main_content .main_content-section:not(:first-of-type), main .main_content .main_content-section:not(:nth-child(4)),
+main .main_action .main_content-section:not(:first-of-type),
+main .main_action .main_content-section:not(:nth-child(4)) {
+  margin-left: 4.1rem;
+}
+
+main .main_content .main_content-section:first-of-type,
+main .main_action .main_content-section:first-of-type {
+  margin-bottom: 6rem;
+}
+
+main .main_content .main_content-section img,
+main .main_action .main_content-section img {
+  width: 22px;
+}
+
+main .main_content .main_content-section-head,
+main .main_action .main_content-section-head {
+  padding-left: 2.4rem;
+}
+
+main .main_content .main_content-section-head h3,
+main .main_action .main_content-section-head h3 {
+  color: #c7a663;
+  font-size: 2.3rem;
+  line-height: 1;
+}
+
+main .main_content .main_content-section-head p,
+main .main_action .main_content-section-head p {
+  padding-top: 8px;
+  font-size: 1.8rem;
+  line-height: 1.2;
+  font-family: "Poppins", sans-serif;
+  font-weight: 200;
+}
+
+main button.green {
+  color: #fff;
+  font-weight: 600;
+  width: 23.6rem;
+  height: 4.4rem;
+  border: none;
+  font-size: 1.4rem;
+  margin-top: 8rem;
+}
+
+main .main_feature_img {
+  margin-top: 8rem;
+  position: relative;
+}
+
+main .main_feature_img-bg {
+  background-color: #fbf8f3;
+  height: 110rem;
+  margin-top: 48px;
+}
+
+main .main_feature_img-img {
+  width: 100%;
+  max-width: 1306px;
+  position: absolute;
+  top: -47px;
+  left: 10%;
+}
+
+main .main_action {
+  padding-top: 124px;
+}
+
+main .main_action .main_content_wrapper {
+  height: 31.5rem;
+}
+
+main .main_action .main_content-section {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 23rem;
+  height: 23.1rem;
+}
+
+main .main_action .main_content-section:nth-last-of-type(2n + 1) {
+  border: 2px solid red;
+  -ms-flex-item-align: end;
+      align-self: flex-end;
+}
+
+main .main_action-head {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+main .main_action-number {
+  font-size: 6rem;
+  font-weight: 600;
+  color: #c7a663;
+}
+
+main .main_action img {
+  margin-left: 1rem;
+}
+
+main .main_action h3 {
+  font-size: 2.6rem;
+  font-weight: 500;
+  line-height: 1.2;
+  padding-top: 1.7rem;
+}
+
+main .main_action-dash {
+  background: #c7a663;
+  width: 13px;
+  height: 5px;
+  margin-top: 2rem;
+}
+
+main .main_action p {
+  padding-top: 2rem;
 }
 /*# sourceMappingURL=style.css.map */

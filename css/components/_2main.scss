@@ -6,6 +6,15 @@ main {
         font-size: 3.4rem;
         font-weight: 600;
     }
+    p {
+        padding-top: 3.2rem;
+        font-size: 1.8rem;
+        line-height: 1.4;
+        width: 100%;
+        max-width: 94rem;
+        margin: 0 auto;
+        font-weight: 200;
+    }
     .main_intro {
         background-color: $bisque;
         height: 28.4rem;
@@ -13,18 +22,119 @@ main {
         h2 {
             padding-top: 8rem;
         }
-        p {
-            padding-top: 3.2rem;
-            font-size: 1.8rem;
-            line-height: 1.44;
-            width: 100%;
-            max-width: 94rem;
+    }
+    .main_content,
+    .main_action {
+        margin-top: 8rem;
+        .main_content_wrapper {
             margin: 0 auto;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            margin-top: 6.2rem;
+            width: 100%;
+            max-width: 1180px;
+        }
+        .main_content-section {
+            width: 352px;
+            height: 188px;
+            display: flex;
+            flex-direction: row;
+            align-items: flex-start;
+            text-align: left;
+            &:not(:first-of-type),
+            &:not(:nth-child(4)) {
+                margin-left: 4.1rem;
+            }
+            &:first-of-type {
+                margin-bottom: 6rem;
+            }
+            img {
+                width: 22px;
+            }
+            &-head {
+                padding-left: 2.4rem;
+                h3 {
+                    color: $gold;
+                    font-size: 2.3rem;
+                    line-height: 1;
+                }
+                p {
+                    padding-top: 8px;
+                    font-size: 1.8rem;
+                    line-height: 1.2;
+                    font-family: "Poppins", sans-serif;
+                    font-weight: 200;
+                }
+            }
         }
     }
-    .main_content {
-        .main_content__wrapper {
-            margin: 0 auto;
+    button.green {
+        color: $white;
+        font-weight: 600;
+        width: 23.6rem;
+        height: 4.4rem;
+        border: none;
+        font-size: 1.4rem;
+        margin-top: 8rem;
+    }
+    .main_feature_img {
+        margin-top: 8rem;
+        position: relative;
+        &-bg {
+            background-color: $bisque;
+            height: 110rem;
+            margin-top: 48px;
+        }
+        &-img {
+            width: 100%;
+            max-width: 1306px;
+            position: absolute;
+            top: -47px;
+            left: 10%;
+        }
+    }
+    .main_action {
+        padding-top: 124px;
+        .main_content_wrapper {
+            height: 31.5rem;
+        }
+        .main_content-section {
+            display: flex;
+            flex-direction: column;
+            width: 23rem;
+            height: 23.1rem;
+            &:nth-last-of-type(2n + 1) {
+                border: 2px solid red;
+                align-self: flex-end;
+            }
+        }
+        &-head {
+            display: flex;
+            align-items: center;
+        }
+        &-number {
+            font-size: 6rem;
+            font-weight: 600;
+            color: $gold;
+        }
+        img {
+            margin-left: 1rem;
+        }
+        h3 {
+            font-size: 2.6rem;
+            font-weight: 500;
+            line-height: 1.2;
+            padding-top: 1.7rem;
+        }
+        &-dash {
+            background: $gold;
+            width: 13px;
+            height: 5px;
+            margin-top: 2rem;
+        }
+        p {
+            padding-top: 2rem;
         }
     }
 }
