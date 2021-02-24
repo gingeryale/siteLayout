@@ -488,14 +488,13 @@ header .header_headline .video img {
 }
 
 nav {
-  display: -webkit-inline-box;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
+  position: relative;
+  opacity: 1;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   color: #fff;
   width: 100%;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
   padding: 1.2rem 2.4rem 1.2rem 2.8rem;
   height: 8.8rem;
 }
@@ -504,27 +503,49 @@ nav ul {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  z-index: 1000;
 }
 
 nav li {
   display: -webkit-inline-box;
   display: -ms-inline-flexbox;
   display: inline-flex;
-  margin: 2.5rem 3.6rem 2.5rem 3.5rem;
+  padding: 2.5rem 3.6rem 2.5rem 3.5rem;
   font-size: 1.4rem;
   font-weight: 500;
   list-style-type: none;
 }
 
-nav .nav-icon {
+nav .nav_icon {
   margin: 0 5px;
 }
 
 nav .nav_btn {
-  padding: 1.5rem 4.2rem;
+  width: 100%;
+  max-width: 15.6rem;
+  height: 4.4rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-item-align: center;
+      align-self: center;
   border-radius: 8px;
   border: solid 1px #fff;
-  margin: 10px 32px 10px 36px;
+  margin-right: 3.2rem;
+  padding: 0;
+  cursor: pointer;
 }
 
 nav .nav_lang {
@@ -534,6 +555,7 @@ nav .nav_lang {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  padding: 0;
 }
 
 nav select {
@@ -543,6 +565,130 @@ nav select {
   color: #fff;
   border: none;
   background: url("../../images/icons/menu-arrow.png") no-repeat right;
-  background-position-x: 3rem;
+  text-indent: 1px;
+  /* hide default arrow */
+  -webkit-appearance: none;
+  -moz-appearance: none;
+}
+
+nav .nav_menu_checkbox {
+  display: none;
+}
+
+@media (max-width: 56.25em) {
+  nav {
+    display: block;
+    position: absolute;
+  }
+  nav .nav_menu_bg {
+    height: 6rem;
+    width: 6rem;
+    border-radius: 50%;
+    position: fixed;
+    top: 3.5rem;
+    right: 3.5rem;
+    background-color: #191919;
+    z-index: 1000;
+    -webkit-transition: -webkit-transform 0.5s cubic-bezier(0.86, 0, 0.07, 1);
+    transition: -webkit-transform 0.5s cubic-bezier(0.86, 0, 0.07, 1);
+    transition: transform 0.5s cubic-bezier(0.86, 0, 0.07, 1);
+    transition: transform 0.5s cubic-bezier(0.86, 0, 0.07, 1), -webkit-transform 0.5s cubic-bezier(0.86, 0, 0.07, 1);
+  }
+  nav ul {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    position: absolute;
+    top: 50%;
+    left: 0;
+    -webkit-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+    text-align: center;
+    width: 100%;
+    text-decoration: none;
+    list-style-type: none;
+    -webkit-transition: all 0.4s ease-in-out;
+    transition: all 0.4s ease-in-out;
+    opacity: 0;
+    width: 0;
+    height: 100vh;
+  }
+  nav .nav_btn {
+    margin: 3.2rem 0;
+  }
+  nav li {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    font-size: 1.8rem;
+  }
+  nav .nav_menu_btn {
+    background-color: #fff;
+    height: 7rem;
+    width: 7rem;
+    position: fixed;
+    top: 3rem;
+    right: 3rem;
+    border-radius: 50%;
+    z-index: 3000;
+    -webkit-box-shadow: 0 1rem 3rem rgba(25, 25, 25, 0.1);
+            box-shadow: 0 1rem 3rem rgba(25, 25, 25, 0.1);
+    text-align: center;
+    cursor: pointer;
+  }
+  nav .nav_menu_checkbox:checked ~ .nav_menu_bg {
+    -webkit-transform: scale(90);
+            transform: scale(90);
+  }
+  nav .nav_menu_checkbox:checked ~ ul {
+    opacity: 1;
+    width: 100%;
+    left: 50%;
+  }
+  nav .nav_menu_icon {
+    position: relative;
+    margin-top: 3.5rem;
+    -webkit-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+  }
+  nav .nav_menu_icon, nav .nav_menu_icon::before, nav .nav_menu_icon::after {
+    width: 3rem;
+    height: 2px;
+    background-color: #191919;
+    display: inline-block;
+  }
+  nav .nav_menu_icon::before, nav .nav_menu_icon::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    -webkit-transform-origin: center;
+            transform-origin: center;
+  }
+  nav .nav_menu_icon::before {
+    top: -0.8rem;
+  }
+  nav .nav_menu_icon::after {
+    top: 0.8rem;
+  }
+  nav .nav_menu_btn:hover .nav_menu_icon:before {
+    top: -1rem;
+  }
+  nav .nav_menu_btn:hover .nav_menu_icon:after {
+    top: 1rem;
+  }
+  nav .nav_menu_checkbox:checked + .nav_menu_btn .nav_menu_icon {
+    background-color: transparent;
+  }
+  nav .nav_menu_checkbox:checked + .nav_menu_btn .nav_menu_icon::before {
+    -webkit-transform: rotate(135deg);
+            transform: rotate(135deg);
+    top: 0;
+  }
+  nav .nav_menu_checkbox:checked + .nav_menu_btn .nav_menu_icon::after {
+    -webkit-transform: rotate(-135deg);
+            transform: rotate(-135deg);
+    top: 0;
+  }
 }
 /*# sourceMappingURL=style.css.map */
