@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="36px" height="37px" viewBox="0 0 36 37" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>BDC04EBD-F942-4BE3-9B38-F04345812A4D</title>
+    <defs>
+        <path d="M8,15.056 C9.216,15.056 10.3413333,14.752 11.376,14.144 C12.3786667,13.568 13.168,12.7786667 13.744,11.776 C14.352,10.7413333 14.656,9.616 14.656,8.4 C14.656,7.184 14.352,6.05866667 13.744,5.024 C13.168,4.02133333 12.3786667,3.232 11.376,2.656 C10.3413333,2.048 9.216,1.744 8,1.744 C6.79466667,1.744 5.67466667,2.048 4.64,2.656 C3.63733333,3.24266667 2.84266667,4.03733333 2.256,5.04 C1.648,6.07466667 1.344,7.19466667 1.344,8.4 C1.344,9.60533333 1.648,10.7253333 2.256,11.76 C2.832,12.7626667 3.62133333,13.5573333 4.624,14.144 C5.65866667,14.752 6.784,15.056 8,15.056 Z M8,13.744 C7.04,13.744 6.144,13.4986667 5.312,13.008 C4.50133333,12.5386667 3.86133333,11.8986667 3.392,11.088 C2.90133333,10.256 2.656,9.36 2.656,8.4 C2.656,7.44 2.90133333,6.544 3.392,5.712 C3.86133333,4.90133333 4.50133333,4.26133333 5.312,3.792 C6.144,3.30133333 7.04,3.056 8,3.056 C8.96,3.056 9.856,3.30133333 10.688,3.792 C11.4986667,4.26133333 12.1386667,4.90133333 12.608,5.712 C13.0986667,6.544 13.344,7.44 13.344,8.4 C13.344,9.36 13.0986667,10.256 12.608,11.088 C12.1386667,11.8986667 11.4986667,12.5386667 10.688,13.008 C9.856,13.4986667 8.96,13.744 8,13.744 Z M6.656,11.392 L10.656,8.4 L6.656,5.392 L6.656,11.392 Z" id="path-1"></path>
+        <filter x="-142.7%" y="-127.7%" width="385.5%" height="385.5%" filterUnits="objectBoundingBox" id="filter-2">
+            <feOffset dx="0" dy="2" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="6" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.121566666 0" type="matrix" in="shadowBlurOuter1"></feColorMatrix>
+        </filter>
+    </defs>
+    <g id="website" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="PropertyHit-landing-page-DESKTOP" transform="translate(-900.000000, -459.000000)" fill-rule="nonzero">
+            <g id="" transform="translate(910.000000, 467.000000)">
+                <use fill="black" fill-opacity="1" filter="url(#filter-2)" xlink:href="#path-1"></use>
+                <use fill="#00CE46" xlink:href="#path-1"></use>
+            </g>
+        </g>
+    </g>
+</svg>
