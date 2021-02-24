@@ -389,7 +389,6 @@ body {
   width: 100%;
   max-width: 1920px;
   margin: 0 auto;
-  border: 5px solid red;
 }
 
 button.green {
@@ -580,6 +579,9 @@ nav .nav_menu_checkbox {
     display: block;
     position: absolute;
   }
+  nav .logo {
+    margin-top: 2rem;
+  }
   nav .nav_menu_bg {
     height: 6rem;
     width: 6rem;
@@ -600,7 +602,6 @@ nav .nav_menu_checkbox {
         -ms-flex-direction: column;
             flex-direction: column;
     position: absolute;
-    top: 50%;
     left: 0;
     -webkit-transform: translate(-50%, -50%);
             transform: translate(-50%, -50%);
@@ -645,6 +646,7 @@ nav .nav_menu_checkbox {
     opacity: 1;
     width: 100%;
     left: 50%;
+    position: fixed;
   }
   nav .nav_menu_icon {
     position: relative;
@@ -690,5 +692,44 @@ nav .nav_menu_checkbox {
             transform: rotate(-135deg);
     top: 0;
   }
+}
+
+main {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  text-align: center;
+}
+
+main h2 {
+  font-size: 3.4rem;
+  font-weight: 600;
+}
+
+main .main_intro {
+  background-color: #fbf8f3;
+  height: 28.4rem;
+  padding: 0 5rem;
+}
+
+main .main_intro h2 {
+  padding-top: 8rem;
+}
+
+main .main_intro p {
+  padding-top: 3.2rem;
+  font-size: 1.8rem;
+  line-height: 1.44;
+  width: 100%;
+  max-width: 94rem;
+  margin: 0 auto;
+}
+
+main .main_content .main_content__wrapper {
+  margin: 0 auto;
 }
 /*# sourceMappingURL=style.css.map */

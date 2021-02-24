@@ -1,0 +1,30 @@
+main {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    h2 {
+        font-size: 3.4rem;
+        font-weight: 600;
+    }
+    .main_intro {
+        background-color: $bisque;
+        height: 28.4rem;
+        padding: 0 5rem;
+        h2 {
+            padding-top: 8rem;
+        }
+        p {
+            padding-top: 3.2rem;
+            font-size: 1.8rem;
+            line-height: 1.44;
+            width: 100%;
+            max-width: 94rem;
+            margin: 0 auto;
+        }
+    }
+    .main_content {
+        .main_content__wrapper {
+            margin: 0 auto;
+        }
+    }
+}
