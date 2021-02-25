@@ -52,8 +52,26 @@
             font-size: 1.4rem;
             text-transform: uppercase;
         }
+        .popup {
+            iframe {
+                transform: translate(-50%, 50%) !important;
+                margin-left: auto;
+            }
+        }
+    }
+    // Mobile
+    @include respond-to(phone) {
+        & {
+            button.green {
+                max-width: 320px;
+            }
+            .popup > iframe {
+                width: 100%;
+            }
+        }
     }
 }
+// navigation
 .nav {
     position: relative;
     opacity: 1;
@@ -112,7 +130,7 @@
     &_menu_checkbox {
         display: none;
     }
-
+    // Mobile Menu
     @include respond-to(tab-port) {
         & {
             display: block;
