@@ -20,12 +20,12 @@ main {
         height: 28.4rem;
         padding: 0 5rem;
         h2 {
-            padding-top: 8rem;
+            padding-top: $margiTop;
         }
     }
     .main_content,
     .main_action {
-        margin-top: 8rem;
+        margin-top: $margiTop;
         .main_content_wrapper {
             margin: 0 auto;
             display: flex;
@@ -63,7 +63,7 @@ main {
                     padding-top: 8px;
                     font-size: 1.8rem;
                     line-height: 1.2;
-                    font-family: "Poppins", sans-serif;
+                    font-family: $secondaryFont;
                     font-weight: 200;
                 }
             }
@@ -76,10 +76,10 @@ main {
         height: 4.4rem;
         border: none;
         font-size: 1.4rem;
-        margin-top: 8rem;
+        margin-top: $margiTop;
     }
     .main_feature_img {
-        margin-top: 8rem;
+        margin-top: $margiTop;
         position: relative;
         &-bg {
             background-color: $bisque;
@@ -104,10 +104,9 @@ main {
             flex-direction: column;
             width: 23rem;
             height: 23.1rem;
-            &:nth-last-of-type(2n + 1) {
-                border: 2px solid red;
-                align-self: flex-end;
-            }
+        }
+        section:nth-child(even) {
+            align-self: flex-end;
         }
         &-head {
             display: flex;
@@ -117,6 +116,7 @@ main {
             font-size: 6rem;
             font-weight: 600;
             color: $gold;
+            line-height: 0;
         }
         img {
             margin-left: 1rem;
@@ -135,6 +135,107 @@ main {
         }
         p {
             padding-top: 2rem;
+        }
+    }
+    .main_projects {
+        margin-top: $margiTop;
+        background-color: $bisque;
+        padding-bottom: $margiTop;
+        h2 {
+            margin-top: $margiTop;
+            margin-bottom: 4.2rem;
+        }
+        .main_content_wrapper {
+            width: 100%;
+            max-width: 114rem;
+            display: flex;
+            justify-content: center;
+            margin: 0 auto;
+        }
+        .main_content-section.project {
+            text-align: left;
+            display: flex;
+            flex-direction: column;
+            width: 35.3rem;
+            border: 1px solid $gold;
+            &:nth-of-type(2) {
+                margin-left: 4rem;
+            }
+            &:nth-of-type(3) {
+                margin-left: 3.7rem;
+            }
+        }
+        &_inner-div {
+            width: 91%;
+            display: block;
+            margin: 0 auto;
+        }
+        img {
+            width: 100%;
+        }
+        h3 {
+            font-size: 2.6rem;
+            font-weight: 500;
+            padding: 2.4rem 1.6rem 8px;
+        }
+        h5 {
+            color: $dark;
+            font-size: 1.6rem;
+            padding: 0;
+            font-weight: $secondaryFont;
+            font-weight: 200;
+            padding: 8px 0 2.4rem;
+        }
+        &-details {
+            border-top: 1px solid $grey;
+            border-bottom: 1px solid $grey;
+            display: flex;
+            padding: 1.7rem 0;
+            &-floors {
+                flex: 0 0 7rem;
+            }
+            &-apt {
+                flex: 2;
+            }
+            span {
+                color: $gold;
+                font-size: 1.6rem;
+                font-weight: 500;
+                line-height: 1.8;
+            }
+            p {
+                font-size: 1.6rem;
+                font-family: $secondaryFont;
+                font-weight: 200;
+                color: $dark;
+                padding: 0;
+            }
+        }
+        &-btn {
+            height: 5.3rem;
+            display: flex;
+            justify-content: flex-end;
+            align-items: center;
+            color: $brand;
+            font-weight: 600;
+            font-size: 1.4rem;
+            img {
+                width: auto;
+                margin-left: 5px;
+            }
+        }
+        button.green {
+            margin-top: 6rem;
+        }
+    }
+    .main_carousel {
+        padding-bottom: 8rem;
+        h2 {
+            margin-top: $margiTop;
+            margin-bottom: 3.2rem;
+        }
+        p {
+            padding-top: 0;
         }
     }
 }

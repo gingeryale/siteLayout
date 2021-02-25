@@ -1,9 +1,19 @@
 $brand: #55c57a;
 $white: #fff;
 $black: #191919;
+$dark: #212121;
 $bisque: #fbf8f3;
 $gold: #c7a663;
+$grey: #ccc;
 
+/* layout */
+$margiTop: 8rem;
+
+/* fonts */
+$mainFont: "Montserrat", sans-serif;
+$secondaryFont: "Poppins", sans-serif;
+
+/* break points */
 @mixin respond-to($breakpoint) {
     @if $breakpoint == phone {
         @media (max-width: 37.5em) {
