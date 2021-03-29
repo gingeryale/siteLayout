@@ -40,7 +40,7 @@
             justify-content: center;
             align-items: center;
         }
-        .video {
+        ._video {
             img {
                 margin-top: 4px;
             }
@@ -52,11 +52,27 @@
             font-size: 1.4rem;
             text-transform: uppercase;
         }
-        .popup {
+        ._popup {
             iframe {
                 transform: translate(-50%, 50%) !important;
                 margin-left: auto;
             }
+        }
+        .header_video-link {
+            margin-top: 4.3rem;
+            display: -webkit-box;
+            display: -ms-flexbox;
+            display: flex;
+            font-weight: 600;
+            width: 14rem;
+            -webkit-box-align: center;
+            -ms-flex-align: center;
+            align-items: center;
+            font-size: 1.4rem;
+            text-transform: uppercase;
+        }
+        .header_video-link img {
+            margin-top: 4px;
         }
     }
     // Mobile
